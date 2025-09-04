@@ -1,0 +1,18 @@
+1]
+
+
+C:\Windows\System32\curl.exe 'https://otwsqknjxebqmtohmppa.supabase.co/rest/v1/cabins?select=*' -H "apikey:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im90d3Nxa25qeGVicW10b2htcHBhIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTY0NjA4NTEsImV4cCI6MjA3MjAzNjg1MX0.zGGAjDkLbljgMpeNDPYiF1wcR9DABnb_-SzkM7Ey-qQ" -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im90d3Nxa25qeGVicW10b2htcHBhIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTY0NjA4NTEsImV4cCI6MjA3MjAzNjg1MX0.zGGAjDkLbljgMpeNDPYiF1wcR9DABnb_-SzkM7Ey-qQ"
+
+2]
+
+
+$headers = @{
+    "apikey" = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im90d3Nxa25qeGVicW10b2htcHBhIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTY0NjA4NTEsImV4cCI6MjA3MjAzNjg1MX0.zGGAjDkLbljgMpeNDPYiF1wcR9DABnb_-SzkM7Ey-qQ"
+    "Authorization" = "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im90d3Nxa25qeGVicW10b2htcHBhIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTY0NjA4NTEsImV4cCI6MjA3MjAzNjg1MX0.zGGAjDkLbljgMpeNDPYiF1wcR9DABnb_-SzkM7Ey-qQ"
+}
+
+Invoke-RestMethod -Uri 'https://otwsqknjxebqmtohmppa.supabase.co/rest/v1/cabins?select=*' -Method Get -Headers $headers
+
+
+
+
